@@ -2,21 +2,17 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.*;
-import javafx.scene.control.ToolBar;
+import javafx.scene.Camera;
+import javafx.scene.Node;
+import javafx.scene.PerspectiveCamera;
+import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class MEFController {
-    @FXML
-    private AnchorPane PaneMef;
-    @FXML
-    private ToolBar toolB;
-
+public class Mef3 {
     @FXML
     void inicioMef(MouseEvent event) throws IOException {
         Node source = (Node)  event.getSource();
@@ -30,22 +26,6 @@ public class MEFController {
         stage.setScene(scene);
         stage.show();
     }
-
-    @FXML
-    void open_malla(MouseEvent event) throws IOException {
-        Node source = (Node)  event.getSource();
-        Stage stage  = (Stage) source.getScene().getWindow();
-        Pane myPane = null;
-        myPane = FXMLLoader.load(getClass().getResource("Malla.fxml"));
-        Camera camera = new PerspectiveCamera();
-        stage.setTitle("MEF en 3 Dimensiones");
-        Scene scene = new Scene(myPane, 800, 600);
-        scene.setCamera(camera);
-        stage.setScene(scene);
-        stage.show();
-
-    }
-
     @FXML
     void open_mef1(MouseEvent event) throws IOException {
         Node source = (Node)  event.getSource();

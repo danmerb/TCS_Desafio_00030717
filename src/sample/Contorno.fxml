@@ -49,12 +49,26 @@
           </Tab>
           <Tab style="-fx-background-color: #8B8192;" text="  Neumann    ">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="213.0" fitWidth="285.0" layoutX="102.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/neum.jpg" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
             </content>
           </Tab>
            <Tab style="-fx-background-color: #8B8192;" text="     Dirichlet    ">
               <content>
-                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="213.0" fitWidth="285.0" layoutX="102.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/dirich.jpg" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
               </content>
            </Tab>
         </tabs>

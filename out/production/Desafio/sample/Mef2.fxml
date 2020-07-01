@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #22142b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MEFController">
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #22142b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Mef2">
    <children>
       <ToolBar prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #22142b;">
-        <items>
-          <Button alignment="CENTER" contentDisplay="BOTTOM" minHeight="68.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#inicioMef" style="-fx-background-color: #8B8192;" text="Inicio" textAlignment="CENTER">
+         <items>
+            <Button alignment="CENTER" contentDisplay="BOTTOM" minHeight="68.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#inicioMef" style="-fx-background-color: #8B8192;" text="Inicio" textAlignment="CENTER">
                <font>
                   <Font name="Sitka Heading Bold Italic" size="23.0" />
                </font>
@@ -47,25 +45,7 @@
                   <Font name="Sitka Heading Bold Italic" size="38.0" />
                </font>
             </Button>
-        </items>
+         </items>
       </ToolBar>
-      <AnchorPane fx:id="PaneMef" layoutY="85.0" prefHeight="515.0" prefWidth="800.0">
-         <children>
-            <Label layoutX="134.0" layoutY="192.0" text="Realizacion del MEF">
-               <font>
-                  <Font name="System Bold Italic" size="57.0" />
-               </font>
-               <textFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop color="#605378" />
-                        <Stop color="#605378" offset="0.5747126436781609" />
-                        <Stop color="WHITE" offset="1.0" />
-                     </stops>
-                  </LinearGradient>
-               </textFill>
-            </Label>
-         </children></AnchorPane>
-      <Button id=".btn-welcome" layoutX="31.0" layoutY="552.0" mnemonicParsing="false" onMouseClicked="#open_malla" prefHeight="29.0" prefWidth="174.0" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="Anterior" />
    </children>
 </AnchorPane>
