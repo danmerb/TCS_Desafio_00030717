@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #22142b;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ModeloController">
+   <children>
+      <Label layoutX="322.0" layoutY="39.0" text="Modelo">
+         <font>
+            <Font name="System Bold Italic" size="57.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#605378" />
+                  <Stop color="#605378" offset="0.5747126436781609" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="208.0" fitWidth="459.0" layoutX="238.0" layoutY="185.0"  pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/modelo.jpg" />
+         </image>
+      </ImageView>
+      <Button id=".btn-welcome" layoutX="596.0" layoutY="542.0" mnemonicParsing="false" onMouseClicked="#open_domain" prefHeight="29.0" prefWidth="174.0" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="Siguiente" />
+      <Label fx:id="varMod" layoutX="83.0" layoutY="455.0" prefHeight="29.0" prefWidth="197.0" style="-fx-background-color: #22142b;" textFill="WHITE" />
+   </children>
+</AnchorPane>

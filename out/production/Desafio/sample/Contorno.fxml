@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #22142b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ContornoContoller">
+   <children>
+      <Label layoutX="69.0" layoutY="39.0" text="Condiciones de Contorno">
+         <font>
+            <Font name="System Bold Italic" size="57.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#605378" />
+                  <Stop color="#605378" offset="0.5747126436781609" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TabPane layoutY="150.0" prefHeight="450.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab style="-fx-background-color: #8B8192;" text="Condiciones">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="101.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/condiciones.png" />
+                           </image>
+                        </ImageView>
+                        <Box depth="200.0" height="200.0" layoutX="554.0" layoutY="179.0" onMouseDragged="#cond_drag" onMousePressed="#cond_rotate" width="200.0">
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis></Box>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab style="-fx-background-color: #8B8192;" text="  Neumann    ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+           <Tab style="-fx-background-color: #8B8192;" text="     Dirichlet    ">
+              <content>
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+           </Tab>
+        </tabs>
+      </TabPane>
+      <Button id=".btn-welcome" layoutX="41.0" layoutY="552.0" mnemonicParsing="false" onMouseClicked="#open_dominio" prefHeight="29.0" prefWidth="174.0" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="Anterior" />
+      <Button id=".btn-welcome" layoutX="605.0" layoutY="552.0" mnemonicParsing="false" onMouseClicked="#open_malla" prefHeight="29.0" prefWidth="174.0" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="Siguiente" />
+   </children>
+</AnchorPane>
