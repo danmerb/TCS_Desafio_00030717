@@ -10,6 +10,24 @@
 
 <AnchorPane prefHeight="515.0" prefWidth="800.0" style="-fx-background-color: #22142b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Mef1">
    <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="354.0" layoutY="109.0" prefHeight="43.0" prefWidth="350.0" text="Localizacion">
+               <font>
+                  <Font name="System Bold Italic" size="35.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#605378" />
+                        <Stop color="#605378" offset="0.5747126436781609" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
       <ToolBar prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #22142b;">
          <items>
             <Button alignment="CENTER" contentDisplay="BOTTOM" minHeight="68.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#inicioMef" style="-fx-background-color: #8B8192;" text="Inicio" textAlignment="CENTER">
@@ -49,23 +67,5 @@
             </Button>
          </items>
       </ToolBar>
-      <AnchorPane fx:id="PaneMef" prefHeight="515.0" prefWidth="800.0">
-         <children>
-            <Label layoutX="134.0" layoutY="192.0" text="Realizacion del MEF">
-               <font>
-                  <Font name="System Bold Italic" size="57.0" />
-               </font>
-               <textFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop color="#605378" />
-                        <Stop color="#605378" offset="0.5747126436781609" />
-                        <Stop color="WHITE" offset="1.0" />
-                     </stops>
-                  </LinearGradient>
-               </textFill>
-            </Label>
-         </children>
-      </AnchorPane>
    </children>
 </AnchorPane>
