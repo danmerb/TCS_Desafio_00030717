@@ -3,16 +3,18 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="515.0" prefWidth="800.0" style="-fx-background-color: #22142b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Mef1">
+<AnchorPane prefHeight="515.0" prefWidth="800.0" style="-fx-background-color: #22142b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MEFController">
    <children>
       <AnchorPane prefHeight="600.0" prefWidth="800.0">
          <children>
-            <Label layoutX="354.0" layoutY="109.0" prefHeight="43.0" prefWidth="350.0" text="Localizacion">
+            <Label layoutX="313.0" layoutY="103.0" prefHeight="43.0" prefWidth="350.0" text="Localizacion">
                <font>
                   <Font name="System Bold Italic" size="35.0" />
                </font>
@@ -26,41 +28,51 @@
                   </LinearGradient>
                </textFill>
             </Label>
+            <ImageView fitHeight="324.0" fitWidth="651.0" layoutX="73.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/p1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="134.0" fitWidth="110.0" layoutX="167.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/tetra2.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <ToolBar prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #22142b;">
          <items>
-            <Button alignment="CENTER" contentDisplay="BOTTOM" minHeight="68.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#inicioMef" style="-fx-background-color: #8B8192;" text="Inicio" textAlignment="CENTER">
+            <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" minHeight="68.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#inicioMef" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="Inicio" textAlignment="CENTER">
                <font>
                   <Font name="Sitka Heading Bold Italic" size="23.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" contentDisplay="BOTTOM" layoutX="10.0" layoutY="10.0" minHeight="45.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#open_mef1" style="-fx-background-color: #8B8192;" text="1" textAlignment="CENTER">
+            <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" layoutX="10.0" layoutY="10.0" minHeight="45.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#open_mef1" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="1" textAlignment="CENTER">
                <font>
                   <Font name="Sitka Heading Bold Italic" size="38.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" contentDisplay="BOTTOM" layoutX="124.0" layoutY="10.0" minHeight="45.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#open_mef2" style="-fx-background-color: #8B8192;" text="2" textAlignment="CENTER">
+            <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" layoutX="124.0" layoutY="10.0" minHeight="45.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#open_mef2" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="2" textAlignment="CENTER">
                <font>
                   <Font name="Sitka Heading Bold Italic" size="38.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" contentDisplay="BOTTOM" layoutX="124.0" layoutY="10.0" minHeight="45.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#open_mef3" style="-fx-background-color: #8B8192;" text="3" textAlignment="CENTER">
+            <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" layoutX="124.0" layoutY="10.0" minHeight="45.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#open_mef3" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="3" textAlignment="CENTER">
                <font>
                   <Font name="Sitka Heading Bold Italic" size="38.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" contentDisplay="BOTTOM" layoutX="238.0" layoutY="10.0" minHeight="45.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#open_mef4" style="-fx-background-color: #8B8192;" text="4" textAlignment="CENTER">
+            <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" layoutX="238.0" layoutY="10.0" minHeight="45.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#open_mef4" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="4" textAlignment="CENTER">
                <font>
                   <Font name="Sitka Heading Bold Italic" size="38.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" contentDisplay="BOTTOM" layoutX="352.0" layoutY="10.0" minHeight="45.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#open_mef5" style="-fx-background-color: #8B8192;" text="5" textAlignment="CENTER">
+            <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" layoutX="352.0" layoutY="10.0" minHeight="45.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#open_mef5" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="5" textAlignment="CENTER">
                <font>
                   <Font name="Sitka Heading Bold Italic" size="38.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" contentDisplay="BOTTOM" layoutX="466.0" layoutY="10.0" minHeight="45.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#open_mef6" style="-fx-background-color: #8B8192;" text="6" textAlignment="CENTER">
+            <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" layoutX="466.0" layoutY="10.0" minHeight="45.0" minWidth="110.0" mnemonicParsing="false" onMouseClicked="#open_mef6" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="6" textAlignment="CENTER">
                <font>
                   <Font name="Sitka Heading Bold Italic" size="38.0" />
                </font>

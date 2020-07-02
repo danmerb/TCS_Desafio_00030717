@@ -134,4 +134,19 @@ public class MEFController {
         stage.setScene(scene);
         stage.show();
     }
+
+    @FXML
+    void open_def(MouseEvent event) throws IOException {
+        Node source = (Node)  event.getSource();
+        Stage stage  = (Stage) source.getScene().getWindow();
+        Pane myPane = null;
+        myPane = FXMLLoader.load(getClass().getResource("DefL.fxml"));
+        Camera camera = new PerspectiveCamera();
+        stage.setTitle("MEF en 3 Dimensiones");
+        Scene scene = new Scene(myPane, 800, 600);
+        scene.setCamera(camera);
+        stage.setScene(scene);
+        stage.show();
+
+    }
 }

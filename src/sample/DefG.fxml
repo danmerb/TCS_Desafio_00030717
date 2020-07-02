@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #22142b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DefinicionController">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="800.0">
+            <children>
+                <Label layoutX="259.0" layoutY="87.0" prefHeight="51.0" prefWidth="406.0" text="Definicion de G">
+                    <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="#605378" />
+                                <Stop color="#605378" offset="0.5747126436781609" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+                <ImageView fitHeight="379.0" fitWidth="303.0" layoutX="57.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/defG1.jpg" />
+                    </image>
+                </ImageView>
+            <ImageView fitHeight="379.0" fitWidth="303.0" layoutX="400.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/defG2.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="310.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Al finalizar se observa una matriz 4x1 llena de ceros" wrappingWidth="150.6533203125" x="50.0" y="70.0" />
+            </children>
+        </AnchorPane>
+        <ToolBar prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #22142b;">
+            <items>
+                <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" minHeight="68.0" minWidth="130.0" mnemonicParsing="false" onMouseClicked="#openL" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="L" textAlignment="CENTER">
+                    <font>
+                        <Font name="Sitka Heading Bold Italic" size="38.0" />
+                    </font>
+                </Button>
+                <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" layoutX="10.0" layoutY="10.0" minHeight="45.0" minWidth="130.0" mnemonicParsing="false" onMouseClicked="#openK" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="K" textAlignment="CENTER">
+                    <font>
+                        <Font name="Sitka Heading Bold Italic" size="38.0" />
+                    </font>
+                </Button>
+                <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" layoutX="124.0" layoutY="10.0" minHeight="45.0" minWidth="130.0" mnemonicParsing="false" onMouseClicked="#openF" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="F" textAlignment="CENTER">
+                    <font>
+                        <Font name="Sitka Heading Bold Italic" size="38.0" />
+                    </font>
+                </Button>
+                <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" layoutX="124.0" layoutY="10.0" minHeight="45.0" minWidth="130.0" mnemonicParsing="false" onMouseClicked="#openZ" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="Z" textAlignment="CENTER">
+                    <font>
+                        <Font name="Sitka Heading Bold Italic" size="38.0" />
+                    </font>
+                </Button>
+                <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" layoutX="238.0" layoutY="10.0" minHeight="45.0" minWidth="130.0" mnemonicParsing="false" onMouseClicked="#openD" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="D" textAlignment="CENTER">
+                    <font>
+                        <Font name="Sitka Heading Bold Italic" size="38.0" />
+                    </font>
+                </Button>
+                <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" layoutX="352.0" layoutY="10.0" minHeight="45.0" minWidth="130.0" mnemonicParsing="false" onMouseClicked="#openG" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="G" textAlignment="CENTER">
+                    <font>
+                        <Font name="Sitka Heading Bold Italic" size="38.0" />
+                    </font>
+                </Button>
+
+            </items>
+        </ToolBar>
+      <Button id=".btn-welcome" layoutX="615.0" layoutY="562.0" mnemonicParsing="false" onMouseClicked="#open_ensamblaje" prefHeight="29.0" prefWidth="174.0" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="Siguiente" />
+    </children>
+</AnchorPane>
