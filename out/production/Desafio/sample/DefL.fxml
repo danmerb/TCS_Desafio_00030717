@@ -42,6 +42,7 @@
             </ImageView>
             <Text fill="WHITE" layoutX="39.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Se sacan las constantes al lado izq. y (a w) al lado drecho" wrappingWidth="186.6533203125" x="50.0" y="70.0" />
             <Text fill="WHITE" layoutX="455.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sustituye x por la x asumida anteriormente" wrappingWidth="150.6533203125" x="50.0" y="70.0" />
+            <Button id=".btn-welcome" layoutX="18.0" layoutY="545.0" mnemonicParsing="false" onMouseClicked="#open_paso6" prefHeight="29.0" prefWidth="174.0" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="Anterior" />
             </children>
         </AnchorPane>
         <ToolBar prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #22142b;">

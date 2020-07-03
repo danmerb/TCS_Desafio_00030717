@@ -181,6 +181,18 @@ public class DefinicionController {
         stage.show();
     }
 
+    @FXML
+    void open_paso6(MouseEvent event) throws IOException {
+        Node source = (Node)  event.getSource();
+        Stage stage  = (Stage) source.getScene().getWindow();
+        Pane myPane = null;
+        myPane = FXMLLoader.load(getClass().getResource("Mef6.fxml"));
+        stage.setTitle("MEF en 3 Dimensiones");
+        Scene scene = new Scene(myPane, 800, 600);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 
 
 }

@@ -29,7 +29,7 @@
             </font></Text>
         <ToolBar layoutX="14.0" layoutY="171.0" orientation="VERTICAL" prefHeight="239.0" prefWidth="200.0" style="-fx-background-color: #22142b;">
             <items>
-                <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" minHeight="68.0" minWidth="130.0" mnemonicParsing="false" onMouseClicked="#openEnsk" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="K" textAlignment="CENTER">
+                <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" minHeight="68.0" minWidth="130.0" mnemonicParsing="false" onMouseClicked="#open_ensK" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="K" textAlignment="CENTER">
                     <font>
                         <Font name="Sitka Heading Bold Italic" size="38.0" />
                     </font>
