@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #22142b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EnsamblajeController">
+    <children>
+        <ImageView fitHeight="158.0" fitWidth="267.0" layoutX="208.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/neuT.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="233.0" fitWidth="419.0" layoutX="345.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/neumanMatriz.jpg" />
+            </image>
+        </ImageView>
+        <Text fill="WHITE" layoutX="208.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Se comenzara aplicando Neumann el vector se suma a la derecha del vector b" wrappingWidth="129.99999523162842">
+            <font>
+                <Font name="Ebrima Bold" size="16.0" />
+            </font></Text>
+        <ToolBar layoutX="14.0" layoutY="171.0" orientation="VERTICAL" prefHeight="239.0" prefWidth="163.0" style="-fx-background-color: #22142b;">
+            <items>
+                <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" minHeight="68.0" minWidth="130.0" mnemonicParsing="false" onMouseClicked="#openEnsk" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="K" textAlignment="CENTER">
+                    <font>
+                        <Font name="Sitka Heading Bold Italic" size="38.0" />
+                    </font>
+                </Button>
+                <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" layoutX="10.0" layoutY="10.0" minHeight="45.0" minWidth="130.0" mnemonicParsing="false" onMouseClicked="#openEnsb" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="b" textAlignment="CENTER">
+                    <font>
+                        <Font name="Sitka Heading Bold Italic" size="38.0" />
+                    </font>
+                </Button>
+                <Button id="btn-welcome" alignment="CENTER" contentDisplay="BOTTOM" layoutX="10.0" layoutY="82.0" minHeight="70.0" minWidth="130.0" mnemonicParsing="false" onMouseClicked="#openCondFinal" style="-fx-background-color: #8B8192;" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="Condiciones" textAlignment="CENTER">
+                    <font>
+                        <Font name="Sitka Heading Bold Italic" size="16.0" />
+                    </font>
+                </Button>
+            </items>
+        </ToolBar>
+        <Label layoutX="61.0" layoutY="58.0" text="Condiciones de contorno">
+            <font>
+                <Font name="System Bold Italic" size="57.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="#605378" />
+                        <Stop color="#605378" offset="0.5747126436781609" />
+                        <Stop color="WHITE" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <Button id=".btn-welcome" layoutX="41.0" layoutY="550.0" mnemonicParsing="false" onMouseClicked="#opendef" prefHeight="29.0" prefWidth="174.0" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="Anterior" />
+        <Button id=".btn-welcome" layoutX="569.0" layoutY="423.0" mnemonicParsing="false" onMouseClicked="#openNeu2" prefHeight="29.0" prefWidth="174.0" styleClass="btn-welcome" stylesheets="@stylesheet.css" text="-&gt;">
+            <font>
+                <Font name="System Bold Italic" size="16.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

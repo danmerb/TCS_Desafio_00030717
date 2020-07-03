@@ -10,6 +10,7 @@
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #22142b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MallaController">
    <children>
@@ -33,11 +34,21 @@
                               </LinearGradient>
                            </textFill>
                         </Label>
-                        <ImageView fitHeight="280.0" fitWidth="287.0" layoutX="275.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="280.0" fitWidth="287.0" layoutX="84.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/malla.png" />
                            </image>
                         </ImageView>
+                        <ImageView fitHeight="124.0" fitWidth="98.0" layoutX="502.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/tetra2.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="412.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La malla creada a partir del domino genero 8 nodos y 12 elementos y ya que estams trabajando en tercera dimension cada uno de estos elementos sera un tetraedro con 4 nodos cada uno" wrappingWidth="278.703125" />
+                        <Text fill="WHITE" layoutX="551.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="12.703125" />
+                        <Text fill="WHITE" layoutX="496.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="12.703125" />
+                        <Text fill="WHITE" layoutX="528.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="12.703125" />
+                        <Text fill="WHITE" layoutX="600.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="12.703125" />
                      </children>
                   </AnchorPane>
                </content>
